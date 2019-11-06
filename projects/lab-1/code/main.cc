@@ -8,7 +8,7 @@
 int
 main(int argc, const char** argv)
 {
-	Example::ImGuiExampleApp app;
+	Example::ExampleApp app;
 	if (app.Open())
 	{
 		app.Run();

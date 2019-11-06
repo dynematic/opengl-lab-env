@@ -8,16 +8,15 @@
 //------------------------------------------------------------------------------
 #include "core/app.h"
 #include "render/window.h"
-
 namespace Example
 {
-class ImGuiExampleApp : public Core::App
+class ExampleApp : public Core::App
 {
 public:
 	/// constructor
-	ImGuiExampleApp();
+	ExampleApp();
 	/// destructor
-	~ImGuiExampleApp();
+	~ExampleApp();
 
 	/// open app
 	bool Open();
@@ -25,19 +24,10 @@ public:
 	void Run();
 private:
 
-	/// compile shaders
-	void CompileShaders();
-
-	/// show some ui things
-	void RenderUI();
-
 	GLuint program;
 	GLuint vertexShader;
 	GLuint pixelShader;
 	GLuint triangle;
 	Display::Window* window;
-	GLchar *vsBuffer;
-	GLchar *fsBuffer;
-	std::string compilerLog;
 };
 } // namespace Example
