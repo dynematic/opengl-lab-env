@@ -8,16 +8,11 @@
 //------------------------------------------------------------------------------
 #include "core/app.h"
 #include "render/window.h"
-namespace Example
+namespace Lab1
 {
-class ExampleApp : public Core::App
+class Lab1App : public Core::App
 {
 public:
-	/// constructor
-	ExampleApp();
-	/// destructor
-	~ExampleApp();
-
 	/// open app
 	bool Open();
 	/// run app
@@ -30,4 +25,4 @@ private:
 	GLuint triangle;
 	Display::Window* window;
 };
-} // namespace Example
+} // namespace Lab1

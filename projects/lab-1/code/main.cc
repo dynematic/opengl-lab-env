@@ -3,12 +3,12 @@
 // (C) 2015-2017 Individual contributors, see AUTHORS file
 //------------------------------------------------------------------------------
 #include "config.h"
-#include "exampleapp.h"
+#include "lab_1_app.h"
 
 int
 main(int argc, const char** argv)
 {
-	Example::ExampleApp app;
+	Lab1::Lab1App app;
 	if (app.Open())
 	{
 		app.Run();
